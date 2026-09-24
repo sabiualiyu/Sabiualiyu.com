@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabiu Aliyu - Data Collection and Field Research Professional">
+  <title>Sabiu Aliyu | Data Collection & Field Research</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="index.html">SA<span>.</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cv" href="assets/Sabiu_Aliyu_CV.pdf" download>Download CV</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">DATA COLLECTION • FIELD RESEARCH • COMMUNITY ENGAGEMENT</p>
+      <h1>Sabiu <span>Aliyu</span></h1>
+      <p class="hero-text">Data collection and field-support professional with experience in community-based programmes, digital data collection, health-related field activities and team coordination.</p>
+      <div class="actions">
+        <a class="btn primary" href="#experience">View Experience</a>
+        <a class="btn secondary" href="assets/Sabiu_Aliyu_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="initials">SA</div>
+      <h2>Field Data & Programme Support</h2>
+      <p>Reliable fieldwork, accurate digital data collection and community-focused programme support.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">ABOUT ME</p>
+      <h2>Professional profile</h2>
+    </div>
+    <div>
+      <p>I am a field data collection and programme-support professional with experience working with community programmes, health initiatives, surveys and field teams.</p>
+      <p>My work has included data collection, digital form administration, field coordination, community engagement, team leadership and supporting programme activities in challenging field environments.</p>
+      <p>I am particularly interested in opportunities where accurate data, community participation and dependable field implementation contribute to better programme decisions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section alt">
+  <div class="container">
+    <p class="eyebrow">EXPERIENCE</p>
+    <h2>Field & programme experience</h2>
+    <div class="cards">
+      <article class="card"><h3>LGA Data Clerk</h3><p>Supported data-related activities for WHO programmes, including field information management and reporting support.</p></article>
+      <article class="card"><h3>Ward Data Clerk</h3><p>Supported field data activities with Solina and contributed to accurate collection and handling of programme information.</p></article>
+      <article class="card"><h3>Team Lead — Polio Eradication Exercises</h3><p>Supported field teams and community activities during polio eradication exercises.</p></article>
+      <article class="card"><h3>Enumerator — MTN / UNICEF Activities</h3><p>Participated in field enumeration and community-level data collection activities.</p></article>
+      <article class="card"><h3>Facilitator — Aspire / Lifehelpers</h3><p>Supported facilitation and community-oriented programme activities.</p></article>
+      <article class="card"><h3>Field Data Collection</h3><p>Experience supporting surveys, monitoring exercises and digital data collection using mobile tools.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <p class="eyebrow">DIGITAL & FIELD SKILLS</p>
+    <h2>Tools and capabilities</h2>
+    <div class="skill-grid">
+      <span>ODK</span><span>KoboCollect</span><span>SurveyCTO</span><span>CommCare</span>
+      <span>Google Forms</span><span>Faionet</span><span>Akida</span><span>DHIS</span>
+      <span>Digital Data Collection</span><span>Community Engagement</span><span>Field Coordination</span><span>Team Support</span>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section alt">
+  <div class="container">
+    <p class="eyebrow">EDUCATION</p>
+    <h2>Academic background</h2>
+    <div class="timeline">
+      <div><strong>NCE — Computer Biology</strong><p>Shehu Shagari College of Education, 2014</p></div>
+      <div><strong>SSCE</strong><p>Government Day Secondary School, Rabah, 2010</p></div>
+      <div><strong>Primary Education</strong><p>Rabah MPS, 2004</p></div>
+    </div>
+    <p class="note">This version follows the NCE-only profile requested for your data-collection applications.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container highlight">
+    <div><p class="eyebrow">WHAT I BRING</p><h2>Accuracy. Field experience. Community focus.</h2></div>
+    <p>I bring practical field experience, familiarity with digital data tools, respect for communities and a strong focus on accurate information collection.</p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's connect</h2>
+      <p>For data collection, field research, community programme and related professional opportunities.</p>
+    </div>
+    <div class="contact-list">
+      <a href="mailto:sabiualiyu6@gmail.com">sabiualiyu6@gmail.com</a>
+      <a href="tel:+2347063694807">+234 706 369 4807</a>
+      <a href="tel:+234904956007">+234 904 956 007</a>
+      <a href="assets/Sabiu_Aliyu_CV.pdf" download>Download my CV →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><p>© <span id="year"></span> Sabiu Aliyu. All rights reserved.</p></div></footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const btn = document.querySelector(".menu-btn");
+const links = document.querySelector(".nav-links");
+btn.addEventListener("click", () => links.classList.toggle("open"));
+document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => links.classList.remove("open")));
+</script>
+</body>
+</html>
